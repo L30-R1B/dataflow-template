@@ -12,13 +12,6 @@
 
     <artifactId>datastream-to-sql</artifactId>
 
-         <repositories>
-    <repository>
-        <id>confluent</id>
-        <url>https://packages.confluent.io/maven/</url>
-    </repository>
-</repositories>
-         
     <description>
         Stream CDC Data from DataStream to SQL via GCS
     </description>
@@ -27,7 +20,16 @@
         <!-- Defina a versão do JaCoCo e do Surefire Plugin -->
         <jacoco.version>0.8.10</jacoco.version>
         <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+        <!-- Defina a versão do Beam -->
+        <beam.version>2.53.0</beam.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -58,17 +60,17 @@
                 </exclusion>
             </exclusions>
         </dependency>
-         <dependency>
-                 <groupId>io.confluent</groupId>
-                 <artifactId>kafka-avro-serializer</artifactId>
-                 <version>5.3.2</version>
-             </dependency>
-             <dependency>
-                 <groupId>io.confluent</groupId>
-                 <artifactId>kafka-schema-registry-client</artifactId>
-                 <version>5.3.2</version>
-             </dependency>
-             
+        <!-- Dependências do Confluent -->
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+            <version>7.4.0</version> <!-- Use a versão mais recente -->
+        </dependency>
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-schema-registry-client</artifactId>
+            <version>7.4.0</version> <!-- Use a versão mais recente -->
+        </dependency>
         <!-- Test dependencies -->
         <dependency>
             <groupId>com.google.truth</groupId>
