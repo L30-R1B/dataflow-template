@@ -48,6 +48,18 @@
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
         </dependency>
+         <dependency>
+         <groupId>org.apache.beam</groupId>
+             <artifactId>beam-it-jdbc</artifactId>
+             <version>2.XX.0</version> <!-- Substitua pela versão correta -->
+             <scope>test</scope>
+         </dependency>
+         <dependency>
+             <groupId>org.apache.beam</groupId>
+             <artifactId>beam-it-gcp</artifactId>
+             <version>2.XX.0</version> <!-- Substitua pela versão correta -->
+             <scope>test</scope>
+         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
