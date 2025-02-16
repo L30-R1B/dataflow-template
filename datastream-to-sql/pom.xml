@@ -69,6 +69,36 @@
             <version>${beam.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-it-common</artifactId>
+            <version>${beam.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-it-conditions</artifactId>
+            <version>${beam.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-it-truthmatchers</artifactId>
+            <version>${beam.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-it-jdbc</artifactId>
+            <version>${beam.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-datastream</artifactId>
+            <version>2.24.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.hamcrest</groupId>
