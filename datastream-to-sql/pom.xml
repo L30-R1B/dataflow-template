@@ -111,19 +111,6 @@
             <artifactId>beam-runners-google-cloud-dataflow-java</artifactId>
             <version>${beam.version}</version>
         </dependency>
-        <!-- Dependências de teste do Apache Beam -->
-        <dependency>
-            <groupId>org.apache.beam</groupId>
-            <artifactId>beam-it-gcp-cloudsql</artifactId>
-            <version>${beam.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.beam</groupId>
-            <artifactId>beam-it-jdbc</artifactId>
-            <version>${beam.version}</version>
-            <scope>test</scope>
-        </dependency>
         <!-- Adicione apenas uma implementação do SLF4J -->
         <dependency>
             <groupId>org.slf4j</groupId>
