@@ -12,6 +12,13 @@
 
     <artifactId>datastream-to-sql</artifactId>
 
+         <repositories>
+    <repository>
+        <id>confluent</id>
+        <url>https://packages.confluent.io/maven/</url>
+    </repository>
+</repositories>
+         
     <description>
         Stream CDC Data from DataStream to SQL via GCS
     </description>
